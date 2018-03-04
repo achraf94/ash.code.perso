@@ -1,0 +1,33 @@
+* {
+    font-family: 'Segoe UI';
+}
+li {
+    list-style: none;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin: 0 0 5px;
+    font-size: 12px;
+}
+ul {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 18%;
+    min-height: 400px;
+    margin: 0 0.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+ul.over {
+    padding-bottom: 155px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBHfu4ojsjbGXStB22gAdHuDRRtobAAmTJ6X9oTD-YboilQoFZ') center bottom no-repeat #ccc;
+}
+ul.over li {
+    background: #fff;
+}
+ul.enter{
+height: 100%;
+}
+ul.leave{
+height: auto;
+}

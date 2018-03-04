@@ -1,0 +1,68 @@
+
+#myTab thead tr th{
+    text-align: center;
+}
+.glyphicon{
+    font-size: 1.9em;
+    color: #6c5ce7;
+}
+#myTab{
+    font-size: 12px;word-break: break-all;
+}
+.opacity50{
+    opacity: 0.1;
+}
+.opacity50:hover{
+    opacity: 1;
+}
+.mineur{
+    color :red;
+}
+.majeur{
+    color :yellow;
+}
+.vieux{
+    color :green;
+}
+#myTab tbody tr td{
+    padding: 10px;
+}
+.foo{
+    width: 50px;
+    height: 50px;
+}
+#BodyTab tr td:nth-child(1){
+    width: 80px;
+}
+#BodyTab tr td:nth-child(2){
+    width: 3
+}
+#BodyTab tr td:nth-child(3){
+    width: 80px;
+}
+#BodyTab tr td:nth-child(4){
+    width: 80px;
+}
+#BodyTab tr td:nth-child(5){
+    width: 80px;
+}
+#BodyTab tr td:nth-child(6){
+    width: 80px;
+}
+#BodyTab tr td:nth-child(7){
+    width: 80px;
+}
+.center{
+    text-align: center;
+}
+.left{text-align: left;}
+.note{
+    width: 300px;
+}
+
+.Style1sel{
+    text-align-last:center;
+    padding: 9px;
+    border-radius: 20px;
+    background: #0984e3;        color: white;font-weight: bold;
+}

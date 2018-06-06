@@ -126,4 +126,32 @@ class action_mo extends CI_Model {
         $this->db->query($sql);
     }
 
+    function setFile_info($name = "", $ex = "", $size = "") {
+        $sql = "insert into file_info (name,extension,Date,size) values('$name','$ex',NOW(),'$size')";
+        $this->db->query($sql);
+        $insert_id = $this->db->insert_id();
+        return $insert_id;
+    }
+
+    function getFile_info() {
+        $sql = "select * from file_info ";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+
+    function getfile_info_byID($id = "") {
+        $sql = "select name from file_info where file_info.id_file =$id";
+        return $this->db->query($sql)->row()->name;
+    }
+
+    function getfile_info_byID_all($id = "") {
+        $sql = "select * from file_info where file_info.id_file =$id";
+        return $this->db->query($sql)->result();
+    }
+
+    function delete_file_byID($id = "") {
+        $sql = "delete from file_info where id_file= $id";
+        $this->db->query($sql);
+    }
+
 }

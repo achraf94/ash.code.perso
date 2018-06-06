@@ -297,42 +297,53 @@ class c_raid extends CI_Controller {
 
     function page1() {
         $this->load->view("upload/head");
-        $this->load->view("upload/page1");
+        $data["images"] = $this->action_mo->getFile_info();
+        $this->load->view("upload/page1", $data);
     }
 
-    function fileUpload() {
-        if (empty($_FILES['file'])) {
-            echo json_encode(['error' => 'No files found for upload.']);
-            return;
-        }
-        $url = FCPATH . "application/third_party/";
-        $images = $_FILES['file'];
-        $success = null;
-        $paths = [];
-        $filenames = $images['name'];
-        for ($i = 0; $i < count($filenames); $i++) {
-            $ext = explode('.', basename($filenames[$i]));
-            $target = $url . "img/" . $filenames[$i] . "." . array_pop($ext);
-            if (move_uploaded_file($images['tmp_name'][$i], $target)) {
-                $success = true;
-                $paths[] = $target;
+    function upload() {
+
+        $url = FCPATH . "application/third_party/img/";
+        $url_base = base_url() . "application/third_party/img/";
+        $Images = count(isset($_FILES['file']['name']) ? $_FILES['file']['name'] : 0);
+        $infoImagene = array();
+        $ext = "";
+        $size = "";
+        for ($i = 0; $i < $Images; $i++) {
+            $nombrefile = isset($_FILES['file']['name'][$i]) ? $_FILES['file']['name'][$i] : null;
+            $nombreTemp = isset($_FILES['file']['tmp_name'][$i]) ? $_FILES['file']['tmp_name'][$i] : null;
+            $ext = explode('.', basename($_FILES['file']['name'][$i]));
+            $size = $_FILES['file']["size"][$i];
+            $filepath = $url . $nombrefile;
+            if (!is_file($filepath)) {
+                move_uploaded_file($nombreTemp, $filepath);
+                $key = $this->action_mo->setFile_info($nombrefile, $ext[1], $size);
+                $imag = $this->action_mo->getfile_info_byID_all($key);
+                foreach ($imag as $row) {
+                    $infoImagene[$i] = array("caption" => "" . $url_base . "" . $row->name . "", "height" => "120px", "url" => base_url() . "index.php/c_raid/delete", "key" => $row->id_file);
+                    $Imagesinfovalue[$i] = "<img  height='120px'  src='" . $url_base . "" . $row->name . "' class='file-preview-image'>";
+                    $arr = array("file_id" => 0, "overwriteInitial" => true, "initialPreviewConfig" => $infoImagene,
+                        "initialPreview" => $Imagesinfovalue);
+                    echo json_encode($arr);
+                }
             } else {
-                $success = false;
-                break;
+                echo 0;
             }
-        }
-        if ($success === true) {
-            echo true;
-        } elseif ($success === false) {
-            echo false;
-            foreach ($paths as $file) {
-                unlink($file);
-            }
-        } else {
-            echo false;
         }
     }
 
+    function delete() {
 
+        $path = FCPATH . "application/third_party/img/";
+        if ($_SERVER['PATH_INFO'] == "/c_raid/delete") {
+            parse_str(file_get_contents("php://input"), $datosDELETE);
+            $key = $datosDELETE['key'];
+            $file = $this->action_mo->getfile_info_byID($key);
+            if (unlink($path . $file)) {
+                $this->action_mo->delete_file_byID($key);
+                echo 0;
+            }
+        }
+    }
 
 }

@@ -1,3 +1,6 @@
+<?php
+$url = base_url() . "application/third_party/img/";
+?>
 <style>
     .file-preview{
         height: 300px;
@@ -13,12 +16,26 @@
 <script>
     $(function () {
         var base = $("#base").val();
-        $("#input-704").fileinput({
-            uploadUrl: base + "index.php/c_raid/fileUpload",
-            uploadAsync: false,
-            overwriteInitial: false,
-            initialPreviewAsData: true
-        });
+        var url_Upload = base + "index.php/c_raid/upload";
+        var url_delete = base + "index.php/c_raid/delete";
 
+        $("#input-704").fileinput({
+        uploadUrl: url_Upload,
+                uploadAsync: false,
+                minFileCount: 1,
+                maxFileCount: 20,
+                showUpload: false,
+                showRemove: false,
+                initialPreview: [
+<?php foreach ($images as $row) { ?>
+                    "<img src='<?php echo $url . $row->name; ?>' height='120px' class='file-preview-image'>",
+<?php } ?>],
+                initialPreviewConfig: [<?php
+foreach ($images as $image) {
+    ?>
+                    {caption: "<?php echo $image->name; ?>", height: "120px", url: url_delete, key:"<?php echo $image->id_file; ?>"},
+<?php } ?>
+                ]
+    });
     });
 </script>

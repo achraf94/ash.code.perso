@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="afb9607f-f563-406a-9b6f-f19b6093bffe" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/SummerNote/summernote.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/SummerNote/summernote.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/css/select2.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/css/select2.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/css/select2.min_1.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/css/select2_1.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/af.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/af_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ar.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ar_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/az.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/az_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/bg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/bg_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/bs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/bs_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ca.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ca_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/cs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/cs_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/da.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/da_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/de.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/de_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/dsb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/dsb_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/el.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/el_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/en.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/en_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/es.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/es_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/et.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/et_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/eu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/eu_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fa.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fa_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fi_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/fr_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/gl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/gl_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/he.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/he_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hi_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hr_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hsb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hsb_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hu_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/hy_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/id.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/id_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/is.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/is_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/it.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/it_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ja.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ja_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/km.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/km_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ko.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ko_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/lt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/lt_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/lv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/lv_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/mk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/mk_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ms.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ms_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/nb.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/nb_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/nl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/nl_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pl_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ps.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ps_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pt-BR.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pt-BR_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pt.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/pt_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ro.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ro_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ru.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/ru_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sk_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sl_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sr-Cyrl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sr-Cyrl_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sr_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sv.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/sv_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/th.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/th_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/tr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/tr_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/uk.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/uk_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/vi.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/vi_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/zh-CN.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/zh-CN_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/zh-TW.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/i18n/zh-TW_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.full.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.full.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.full.min_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.full_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2.min_1.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/codeigniter_M/assets/select2Boostrap/js/select2_1.js" />
+      <change beforePath="$PROJECT_DIR$/codeigniter_M/application/controllers/c_raid.php" afterPath="$PROJECT_DIR$/codeigniter_M/application/controllers/c_raid.php" />
+      <change beforePath="$PROJECT_DIR$/codeigniter_M/application/models/action_mo.php" afterPath="$PROJECT_DIR$/codeigniter_M/application/models/action_mo.php" />
+      <change beforePath="$PROJECT_DIR$/codeigniter_M/application/views/Actions.php" afterPath="$PROJECT_DIR$/codeigniter_M/application/views/Actions.php" />
+      <change beforePath="$PROJECT_DIR$/codeigniter_M/application/views/Issues.php" afterPath="$PROJECT_DIR$/codeigniter_M/application/views/Issues.php" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Actions.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codeigniter_M/application/views/Actions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="114" column="2" lean-forward="false" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/codeigniter_M/application/views/Actions.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ash.code.perso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ash.code.perso" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ash.code.perso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ash.code.perso" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="codeigniter_M" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ash.code.perso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ash.code.perso" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="codeigniter_M" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="ash.code.perso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ash.code.perso" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="codeigniter_M" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afb9607f-f563-406a-9b6f-f19b6093bffe" name="Default" comment="" />
+      <created>1520559862699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520559862699</updated>
+      <workItem from="1520559866652" duration="148000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="148000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/codeigniter_M/application/views/Actions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="114" column="2" lean-forward="false" selection-start-line="114" selection-start-column="2" selection-end-line="114" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,11 +1,15 @@
 <link href="<?php echo base_url(); ?>assets/3w/3w.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo base_url(); ?>assets/hover/hover.css" rel="stylesheet" type="text/css"/>
 <script src="<?php echo base_url(); ?>assets/JS/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/bootstrap-3.3.7/js/bootstrap.js" type="text/javascript"></script>
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <style>
+    .filtre tr th {
+        text-align: center;
+    }
     body{
-        font-family: 'Lora', serif;
+        font-family: 'Lato', sans-serif;
     }
     .w3-margin-My{
         margin-left: 1px;
@@ -19,11 +23,8 @@
     .w3-row a div h2{
         font-size: 1em;
         font-weight: bold;
-        transition: font-size 0.3s;
     }
-    .w3-row a div:hover h2{
-        font-size:1.2em;
-    }
+
     .textOpen{
         background-color: #2980b9;color:white;
     }
@@ -157,40 +158,42 @@
 </nav>
 <div class="w3-row cen" style="padding-left: 18%;">
     <a href="<?php echo base_url(); ?>index.php/c_raid/action">
-        <div class="leWidth w3-container w3-green w3-col w3-margin">
-            <h2>ACTIONS</h2> 
+        <div class="leWidth w3-container w3-green w3-col w3-margin hvr-wobble-bottom">
+            <h2 class="w3-medium">ACTIONS</h2> 
         </div>
     </a>
     <a href="<?php echo base_url(); ?>index.php/c_raid/risk">
-        <div class="leWidth w3-col w3-container w3-red w3-margin w3-bottombar w3-border-black">
-            <h2>RISKS</h2> 
+        <div class="leWidth w3-col w3-container w3-red w3-margin hvr-wobble-bottom ">
+            <h2 class="w3-medium">RISKS</h2> 
         </div>
     </a>
     <a href="<?php echo base_url(); ?>index.php/c_raid/issue">
-        <div class="leWidth w3-col w3-container w3-yellow w3-margin">
-            <h2>ISSUES</h2> 
+        <div class="leWidth w3-col w3-container w3-yellow w3-margin hvr-wobble-bottom ">
+            <h2 class="w3-medium">ISSUES</h2> 
         </div>
     </a>
     <a href="<?php echo base_url(); ?>index.php/c_raid/decision">
-        <div class="leWidth w3-col w3-container w3-blue w3-margin">
-            <h2>DECISIONS</h2> 
+        <div class="leWidth w3-col w3-container w3-blue w3-margin hvr-wobble-bottom">
+            <h2 class="w3-medium">DECISIONS</h2> 
         </div>
     </a>
 
     <div class="leWidth w3-col" style="text-align: left;padding-top:40px;">
         <span class="glyphicon glyphicon-search stylegly"></span>
         <span class="glyphicon glyphicon-plus stylegly"></span>
-        <span class="glyphicon glyphicon-eye-open stylegly"></span>
+        <span class="glyphicon glyphicon-eye-open stylegly eye"></span>
     </div>
 
 </div>
 <div class="w3-container w3-white">
-    <h4>Environ  résultats</h4>
-    <table>
+    <table class="table filtre">
         <thead>
+            <tr><td colspan="4" class="w3-center w3-xlarge">Filtre<br>    <h4>Environ <span><?php echo count($risks); ?></span> résultats</h4></td></tr>
             <tr>
-                <th>dd</th>
-                <th>dd</th>
+                <th>DATE</th>
+                <th>TYPE</th>
+                <th>DURÉE</th>
+                <th>TRIER PAR</th>
             </tr>
         </thead>
     </table>
@@ -212,7 +215,7 @@
                         $probacss = "width:" . $proba;
                         $impactcss = "width:" . $impac;
                         ?>
-                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-border w3-hover-border-red w3-pale-blue">
+                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-margin  hvr-curl-bottom-right w3-text-black w3-padding" style="width: 90%;background-color: rgba(46, 134, 222,0.3);">
                             <div class="w3-round-large   w3-margin">
                                 <header>
                                     <a href="#myCarousel<?php echo $row->Risk_ID; ?>" data-slide="prev"><span class="w3-left glyphicon glyphicon-menu-left majmo "></span></a>
@@ -266,7 +269,7 @@
                             </header>
                             <br><br>
                         </div>
-                        <br>
+                        <br><br>
                         <?php
                     }
                 }
@@ -288,7 +291,7 @@
                         $probacss = "width:" . $proba;
                         $impactcss = "width:" . $impac;
                         ?>
-                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-border w3-hover-border-red w3-pale-blue">
+                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-margin  hvr-curl-bottom-right w3-padding" style="width: 90%;background-color: rgba(238, 82, 83,0.3);">
                             <div class="w3-round-large   w3-margin">
                                 <header>
 
@@ -343,7 +346,7 @@
                             </header>
                             <br><br>
                         </div>
-                        <br>
+                        <br><br>
                         <?php
                     }
                 }
@@ -360,15 +363,15 @@
 
                     if ($row->Status_ID == 2) {
                         $k++;
-                        $impac = $row->Probability * 100;
-                        $proba = $row->Impact * 100;
-                        $probacss = "width:" . $proba;
-                        $impactcss = "width:" . $impac;
+                        $impac = $row->Probability ;
+                        $proba = $row->Impact;
+                        $probacss = "width:" . $proba * 100;
+                        $impactcss = "width:" . $impac * 100;
+                        $riskcss = "width:" . $impac * $proba * 100;
                         ?>
-                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-border w3-hover-border-red w3-pale-blue">
+                        <div id="card<?php echo $row->Risk_ID; ?>" id-data="<?php echo $row->Risk_ID; ?>" class="w3-margin  hvr-curl-bottom-right w3-text-black w3-padding" style="width: 90%;background-color: rgba(243, 104, 224,0.5);">
                             <div class="w3-round-large   w3-margin">
                                 <header>
-
                                     <a href="#myCarousel<?php echo $row->Risk_ID; ?>" data-slide="prev"><span class="w3-left glyphicon glyphicon-menu-left majmo "></span></a>
                                     <a href="#myCarousel<?php echo $row->Risk_ID; ?>" data-slide="next"><span class="w3-right glyphicon glyphicon-menu-right majmo " href="#myCarousel<?php echo $row->Risk_ID; ?>" data-slide="next"></span></a>
                                     <br><br>
@@ -379,7 +382,6 @@
                                     <br>
                                 </header>
                                 <hr>
-
                                 <div id="myCarousel<?php echo $row->Risk_ID; ?>" class="w3-container carousel slide"    >
 
                                     <div class="carousel-inner">
@@ -404,10 +406,13 @@
                                 </header>
                                 <br>
                                 <div class="progress w3-margin-top">
-                                    <div class="blac progress-bar progress-bar-striped" role="progressbar" style="<?php echo $probacss; ?>" aria-valuenow="<?php echo $proba; ?>" aria-valuemin="0" aria-valuemax="100" >Probability</div>
+                                    <div class="blac progress-bar progress-bar-striped" role="progressbar" style="<?php echo $probacss; ?>" aria-valuenow="<?php echo $proba * 100; ?>" aria-valuemin="0" aria-valuemax="100" >Probability</div>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped w3-red" role="progressbar" style="<?php echo $impactcss; ?>" aria-valuenow="<?php echo $impac; ?>" aria-valuemin="0" aria-valuemax="100"><span class="blac">Impact</span></div>
+                                    <div class="progress-bar progress-bar-striped w3-red" role="progressbar" style="<?php echo $impactcss; ?>" aria-valuenow="<?php echo $impac * 100; ?>" aria-valuemin="0" aria-valuemax="100"><span class="blac">Impact</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped w3-red" role="progressbar" style="<?php echo $riskcss; ?>" aria-valuenow="<?php echo $impac * $proba * 100; ?>" aria-valuemin="0" aria-valuemax="100"><span class="blac">Risks</span></div>
                                 </div>
                             </div>
                             <header style="padding-left: 10px;padding-right: 10px;">
@@ -420,7 +425,7 @@
                             </header>
                             <br><br>
                         </div>
-                        <br>
+                        <br><br>
                         <?php
                     }
                 }
@@ -433,6 +438,9 @@
 
 <script>
     $(function () {
+        $(".eye").click(function () {
+            $(".filtre").toggle("hide");
+        });
         $(".nbropen").text("<?php echo $i; ?>");
         $(".nbrrpo").text("<?php echo $j; ?>");
         $(".nbrclose").text("<?php echo $k; ?>");

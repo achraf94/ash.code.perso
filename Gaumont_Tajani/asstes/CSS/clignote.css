@@ -1,0 +1,203 @@
+
+@keyframes clignote {
+  0% { opacity: .2; }
+  50%{ opacity: .8; }
+  100% { opacity: .2; }
+}
+
+@-webkit-keyframes load {
+  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+@keyframes load {
+  0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+}
+
+html{
+  text-align: center;
+}
+
+.loading{
+  display: inline-block; /* just for the test/exemple */
+  /*display: block;*/
+  margin: 6em 2em;
+  font-size: 1em;
+  position: relative;
+  border-top: 1.1em solid #286090;
+  border-right: 1.1em solid #F5F5F5;
+  border-bottom: 1.1em solid #286090;
+  border-left: 1.1em solid #F5F5F5;
+  -webkit-animation: load 3.6s infinite linear;
+  animation: load 3.6s infinite linear;
+	position: relative;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loading p{
+  position: absolute;
+	content: '';
+	margin: auto;
+	top: .1em;
+	left: .1em;
+	right: .1em;
+	bottom: .1em;
+	line-height: 10em;
+	text-align: center;
+	color: #286090;
+  font-family: sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+	-webkit-animation: load 3.6s infinite linear reverse, clignote 1.6s infinite linear;
+  animation: load 3.6s infinite linear reverse, clignote 1.6s infinite linear;
+}
+
+.loading:before{
+	position: absolute;
+	display: block;
+	content: '';
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  font-size: .8em;
+	text-align: center;
+  border-top: 1.1em solid #407CAD;
+  border-right: 1.1em solid #F5F5F5;
+  border-bottom: 1.1em solid #407CAD;
+  border-left: 1.1em solid #F5F5F5;
+  -webkit-animation: load 1.6s infinite linear reverse;
+  animation: load 1.6s infinite linear reverse;
+  border-radius: 50%;
+}
+
+.loading:after{
+	position: absolute;
+	display: block;
+	content: '';
+	top: 1.1em;
+	left: 1.1em;
+	right: 1.1em;
+	bottom: 1.1em;
+  font-size: .8em;
+	text-align: center;
+  border-top: 1.1em solid #72ABDB;
+  border-right: 1.1em solid #F5F5F5;
+  border-bottom: 1.1em solid #72ABDB;
+  border-left: 1.1em solid #F5F5F5;
+  border-radius: 50%;
+}
+
+
+/**************************/
+/* Just for exemple */
+/**************************/
+
+.exemple1{
+  -webkit-animation: load 1.6s infinite linear;
+  animation: load 1.6s infinite linear;
+}
+
+.exemple1 p{
+  	-webkit-animation: load 1.6s infinite linear reverse, clignote 1.6s infinite linear;
+  animation: load 1.6s infinite linear reverse, clignote 1.6s infinite linear;
+}
+
+
+.exemple2{
+  -webkit-animation: load 5.6s infinite linear;
+  animation: load 5.6s infinite linear;
+}
+
+.exemple2 p{
+  	-webkit-animation: load 5.6s infinite linear reverse, clignote 1.6s infinite linear;
+  animation: load 5.6s infinite linear reverse, clignote 1.6s infinite linear;
+}
+
+.exemple2:after{
+  -webkit-animation: load 3.6s infinite linear;
+  animation: load 3.6s infinite linear;
+}
+
+.exemple3{
+  -webkit-animation: load 5.6s infinite linear;
+  animation: load 5.6s infinite linear;
+}
+
+.exemple3 p{
+  	-webkit-animation: load 5.6s infinite linear reverse, clignote 1.6s infinite linear;
+  animation: load 5.6s infinite linear reverse, clignote 1.6s infinite linear;
+}
+
+.exemple4{
+  -webkit-animation: load 4.6s infinite linear;
+  animation: load 4.6s infinite linear;
+}
+
+.exemple4 p{
+  	-webkit-animation: load 5.6s infinite linear reverse, clignote 1.6s infinite linear;
+  animation: load 4.6s infinite linear reverse, clignote 1.6s infinite linear;
+}
+
+.exemple4:before{
+  -webkit-animation: load 3.6s infinite linear;
+  animation: load 3.6s infinite linear;
+}
+
+.exemple4:after{
+  -webkit-animation: load 1.6s infinite linear;
+  animation: load 1.6s infinite linear;
+}
+
+
+.exemple5{
+  -webkit-animation: load 2s infinite linear reverse;
+  animation: load 2s infinite linear reverse;
+}
+
+.exemple5 p{
+  	-webkit-animation: load 2s infinite linear, clignote 1.6s infinite linear;
+  animation: load 2s infinite linear, clignote 1.6s infinite linear;
+}
+
+.exemple5:before{
+  -webkit-animation: load 3.6s infinite linear;
+  animation: load 3.6s infinite linear;
+}
+
+.exemple5:after{
+  -webkit-animation: load 1.6s infinite linear;
+  animation: load 1.6s infinite linear;
+}
+
+
+
+.color1{ border-color: #E2B900 #F5F5F5;}
+.color1 p{color: #E2B900;}
+.color1:before{border-color: #E8CB4A #F5F5F5;}
+.color1:after{border-color: #EDD782 #F5F5F5;}
+
+.color2{ border-color: #C91010 #F5F5F5;}
+.color2 p{color: #C91010;}
+.color2:before{border-color: #E03C3C #F5F5F5;}
+.color2:after{border-color: #EA8181 #F5F5F5;}
+
+.color3{ border-color: #299B25 #F5F5F5;}
+.color3 p{color: #299B25;}
+.color3:before{border-color: #50B24A #F5F5F5;}
+.color3:after{border-color: #7DCE77 #F5F5F5;}
+
+.color4{ border-color: #299B25 #F5F5F5;}
+.color4 p{color: #C91010;}
+.color4:before{border-color: #286090 #F5F5F5;}
+.color4:after{border-color: #E2B900 #F5F5F5;}
+
+.color5{ border-color: #E2B900 #C91010 #299B25 #286090;}
+.color5 p{color: #C91010;}
+.color5:before{border-color: #F5F5F5 #D1D1D1;}
+.color5:after{border-color: #E2B900 #C91010 #299B25 #286090;}
+

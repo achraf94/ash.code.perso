@@ -213,15 +213,15 @@
                                 <div id="myCarousel<?php echo $row->Issue_ID; ?>" class="w3-container carousel slide"    >
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <h4>Description</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Description</h4>
                                             <?php echo $row->Issue_Descr; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Effect</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Effect</h4>
                                             <?php echo $row->Impact_Effect; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Resolution</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Resolution</h4>
                                             <?php echo $row->Resolution; ?>
                                         </div>
                                     </div>
@@ -276,15 +276,15 @@
                                 <div id="myCarousel<?php echo $row->Issue_ID; ?>" class="w3-container carousel slide"    >
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <h4>Description</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Description</h4>
                                             <?php echo $row->Issue_Descr; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Effect</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Effect</h4>
                                             <?php echo $row->Impact_Effect; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Resolution</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Resolution</h4>
                                             <?php echo $row->Resolution; ?>
                                         </div>
                                     </div>
@@ -339,15 +339,15 @@
                                 <div id="myCarousel<?php echo $row->Issue_ID; ?>" class="w3-container carousel slide"    >
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <h4>Description</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Description</h4>
                                             <?php echo $row->Issue_Descr; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Effect</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Effect</h4>
                                             <?php echo $row->Impact_Effect; ?>
                                         </div>
                                         <div class="item ">
-                                            <h4>Resolution</h4>
+                                            <h4 class="w3-padding w3-border w3-text-black">Resolution</h4>
                                             <?php echo $row->Resolution; ?>
                                         </div>
                                     </div>

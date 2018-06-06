@@ -1,7 +1,11 @@
 <link href="<?php echo base_url(); ?>assets/3w/3w.css" rel="stylesheet" type="text/css"/>
 <link href="<?php echo base_url(); ?>assets/bootstrap-3.3.7/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo base_url(); ?>assets/SummerNote/summernote.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo base_url(); ?>assets/chosen/chosen.min.css" rel="stylesheet" type="text/css"/>
 <script src="<?php echo base_url(); ?>assets/JS/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="<?php echo base_url(); ?>assets/bootstrap-3.3.7/js/bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/SummerNote/summernote.js" type="text/javascript"></script>
+<script src="<?php echo base_url(); ?>assets/chosen/chosen.jquery.js" type="text/javascript"></script>
 <style>
     .w3-margin-My{
         margin-left: 1px;
@@ -90,6 +94,9 @@
     }
 
 </style>
+<div class="hide">
+    <input type="hidden" value="<?php echo base_url(); ?>" id="baseurl">
+</div>
 <div class="loading hide"style="position:absolute;top: 50%; left: 50%;transform: translate(-50%, -50%);">
     <img src="<?php echo base_url(); ?>assets/img/load1.gif" alt=""/>
 </div>
@@ -105,7 +112,7 @@
             </button>
             <a class="navbar-brand" href="#">Brand</a>
         </div>
-
+        <??>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
@@ -147,22 +154,22 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="w3-row cen" style="padding-left: 18%;">
-    <a href="<?php echo base_url();?>index.php/c_raid/action">
+    <a href="<?php echo base_url(); ?>index.php/c_raid/action">
         <div class="leWidth w3-container w3-green w3-col w3-margin w3-bottombar w3-border-black">
             <h2>ACTIONS</h2> 
         </div>
     </a>
-   <a href="<?php echo base_url();?>index.php/c_raid/risk">
+    <a href="<?php echo base_url(); ?>index.php/c_raid/risk">
         <div class="leWidth w3-col w3-container w3-red w3-margin">
             <h2>RISKS</h2> 
         </div>
     </a>
-    <a href="<?php echo base_url();?>index.php/c_raid/issue">
+    <a href="<?php echo base_url(); ?>index.php/c_raid/issue">
         <div class="leWidth w3-col w3-container w3-yellow w3-margin">
             <h2>ISSUES</h2> 
         </div>
     </a>
-    <a href="<?php echo base_url();?>index.php/c_raid/decision">
+    <a href="<?php echo base_url(); ?>index.php/c_raid/decision">
         <div class="leWidth w3-col w3-container w3-blue w3-margin">
             <h2>DECISIONS</h2> 
         </div>
@@ -198,10 +205,11 @@
                     if ($row->Status_ID == 1) {
                         $i++;
                         ?>
-                        <div class="w3-border w3-padding" id="card<?php echo $row->Action_ID; ?>" id-data="<?php echo $row->Action_ID; ?>">
+                        <div class="w3-border w3-padding cardbody" id="card<?php echo $row->Action_ID; ?>" data-id="<?php echo $row->Action_ID; ?>">
                             <div class="w3-round-large <?php echo setPriority($row->Priority); ?> w3-padding w3-margin">
                                 <header >
-                                    <span class="w3-left"> <?php echo $project[$row->Project_ID]; ?></span>
+                                    <span class="w3-left"> <?php echo array_keys($project, $row->Project_ID) ? $project[$row->Project_ID] : " "; ?></span>
+
                                     <span class="w3-right"><?php echo $row->Due_Date; ?></span>
                                     <br>
                                 </header>
@@ -218,7 +226,7 @@
                             </div>
                             <header style="padding-left: 10px;padding-right: 10px;">
                                 <span class="w3-right glyphicon glyphicon-trash crud majmo"></span>
-                                <span class="w3-right glyphicon glyphicon-pencil crud majmo"></span>
+                                <span class="w3-right glyphicon glyphicon-pencil crud majmo" data-toggle="modal" data-target="#myModalEdit"></span>
                                 <span class="w3-right glyphicon glyphicon-comment crud majmo"> </span>
                                 <span class="w3-left glyphicon glyphicon-tint t_prog majmo"></span>
                                 <span class="w3-left glyphicon glyphicon-tint t_close majmo" > </span>
@@ -239,14 +247,15 @@
                 <?php
                 $j = 0;
                 foreach ($actions as $row) {
-                    
+
                     if ($row->Status_ID == 3) {
                         $j++;
                         ?>
-                        <div class="w3-border w3-padding" id="card<?php echo $row->Action_ID; ?>" id-data="<?php echo $row->Action_ID; ?>">
+                        <div class="w3-border w3-padding cardbody" id="card<?php echo $row->Action_ID; ?>" data-id="<?php echo $row->Action_ID; ?>">
                             <div class="w3-round-large <?php echo setPriority($row->Priority); ?> w3-padding w3-margin">
                                 <header >
-                                    <span class="w3-left"> <?php echo $project[$row->Project_ID]; ?></span>
+                                    <span class="w3-left"> <?php echo array_keys($project, $row->Project_ID) ? $project[$row->Project_ID] : " "; ?></span>
+
                                     <span class="w3-right"><?php echo $row->Due_Date; ?></span>
                                     <br>
                                 </header>
@@ -263,7 +272,7 @@
                             </div>
                             <header style="padding-left: 10px;padding-right: 10px;">
                                 <span class="w3-right glyphicon glyphicon-trash crud majmo"></span>
-                                <span class="w3-right glyphicon glyphicon-pencil crud majmo"></span>
+                                <span class="w3-right glyphicon glyphicon-pencil crud majmo" data-toggle="modal" data-target="#myModalEdit"></span>
                                 <span class="w3-right glyphicon glyphicon-comment crud majmo"> </span>
                                 <span class="w3-left glyphicon glyphicon-tint t_close majmo"></span>
                                 <span class="w3-left glyphicon glyphicon-tint t_open majmo" > </span>
@@ -284,14 +293,14 @@
                 <?php
                 $k = 0;
                 foreach ($actions as $row) {
-                    
+
                     if ($row->Status_ID == 2) {
                         $k++;
                         ?>
-                        <div id="card<?php echo $row->Action_ID; ?>" id-data="<?php echo $row->Action_ID; ?>" class="w3-border w3-padding">
+                        <div id="card<?php echo $row->Action_ID; ?>" data-id="<?php echo $row->Action_ID; ?>" class="w3-border w3-padding cardbody">
                             <div class="w3-round-large <?php echo setPriority($row->Priority); ?> w3-padding w3-margin">
                                 <header >
-                                    <span class="w3-left"> <?php echo $project[$row->Project_ID]; ?></span>
+                                    <span class="w3-left"> <?php echo array_keys($project, $row->Project_ID) ? $project[$row->Project_ID] : " "; ?></span>
                                     <span class="w3-right"><?php echo $row->Due_Date; ?></span>
                                     <br>
                                 </header>
@@ -308,7 +317,7 @@
                             </div>
                             <header style="padding-left: 10px;padding-right: 10px;">
                                 <span class="w3-right glyphicon glyphicon-trash majmo crud"></span>
-                                <span class="w3-right glyphicon glyphicon-pencil majmo crud"></span>
+                                <span class="w3-right glyphicon glyphicon-pencil majmo crud" data-toggle="modal" data-target="#myModalEdit"></span>
                                 <span class="w3-right glyphicon glyphicon-comment majmo crud"> </span>
                                 <span class="w3-left glyphicon glyphicon-tint t_open majmo"></span>
                                 <span class="w3-left glyphicon glyphicon-tint t_prog majmo" > </span>
@@ -329,6 +338,8 @@
 
 <script>
     $(function () {
+        var base = $("#baseurl").val();
+        $(".choosenSeect").chosen();
         $(".nbropen").text("<?php echo $i; ?>");
         $(".nbrrpo").text("<?php echo $j; ?>");
         $(".nbrclose").text("<?php echo $k; ?>");
@@ -340,9 +351,10 @@
                 $(".loading").addClass("hide");
             }
         });
-        $(".click").click(function () {
-            $.post("sousRAID/call_actions.php", function (data) {
-                $("#resu").html(data);
+        $(".glyphicon-pencil").click(function () {
+            var id = $(this).parents("div.cardbody").data("id");
+            $.post(base + "index.php/c_raid/setUpdate/" + id, function (data) {
+                $(".Editmodal").html(data);
             });
         });
     });
@@ -372,3 +384,29 @@ function setPriority($r) {
     return $var;
 }
 ?>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="myModalEdit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width: 70%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body Editmodal">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br>

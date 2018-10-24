@@ -34,6 +34,7 @@ class c_raid extends CI_Controller {
             $data["moi"] = $_SESSION['id'];
             $data["photo"] = $_SESSION['picture'];
             $data["user"] = $this->Users->get_user($_SESSION['id']);
+            $this->Users->clearKey();
             $this->load->view("3D/carousel", $data);
         } else {
             $this->registre();

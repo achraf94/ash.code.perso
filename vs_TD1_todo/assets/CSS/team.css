@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+.container_scrole {
+    height: 82%;
+    margin-top: 1%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background: #f5f7f8;
+    font-family: system-ui;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
+}
+.team {
+    display: inline-block;
+    background-color: #dfe6e9;
+    overflow-x: scroll;
+    height: 100%;
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.mytext {
+    text-size: 1.2em;
+    font-weight: bold;
+}
+.mycard {
+    margin: 5px;
+    background-color: rgba(223, 249, 251, 0.3);
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all .1s ease-in;
+    height: 200px;
+}
+.mycard:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+.mycard article img {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.mycard article {
+    padding: 10px;
+}
+.mycard h1 {
+    font-size: 10px;
+    margin: 0;
+    color: #333;
+}
+.mycard span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+.header {
+    padding: 5px 8px;
+    background: #555;
+    color: #f1f1f1;
+}
+
+.fa{
+    font-size: 1.9em;cursor: pointer;
+}

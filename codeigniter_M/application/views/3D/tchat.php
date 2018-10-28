@@ -50,12 +50,12 @@
             $.post(base + "index.php/c_raid/setcheckKeyDown", {id1: currentID, id2: idUser, type: e});
         }
         function getmsg() {
-            $.post("http://localhost:8080/ash.code.perso/codeigniter_m/index.php/c_raid/getMsg/", {id1: currentID, id2: idUser}, function (data) {
+            $.post("http://localhost:8081/ash.code.perso/codeigniter_m/index.php/c_raid/getMsg/", {id1: currentID, id2: idUser}, function (data) {
                 $messages.html(data).animate({scrollTop: $(document).height()}, 1000);
             });
         }
         function setmsg(user1, user2, msg) {
-            $.post("http://localhost:8080/ash.code.perso/codeigniter_m/index.php/c_raid/setMsg/", {id1: user1, id2: user2, msg: msg});
+            $.post("http://localhost:8081/ash.code.perso/codeigniter_m/index.php/c_raid/setMsg/", {id1: user1, id2: user2, msg: msg});
         }
     });
 </script>

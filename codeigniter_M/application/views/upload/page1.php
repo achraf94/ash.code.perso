@@ -2,16 +2,17 @@
 $url = base_url() . "application/third_party/img/";
 ?>
 <style>
-    .file-preview{
-        height: 300px;
+    .container{
+        height: 200px;
+        width: auto;
+
     }
 </style>
-<input type="hidden" id="base" value="<?php echo base_url(); ?>">
-<div class="form-group">
-    <div class="file-loading">
-        <input id="input-704" name="file[]" type="file" multiple>
-    </div>
+<div class="container">
+    <input type="hidden" id="base" value="<?php echo base_url(); ?>">
+    <input id="input-704" name="file[]" type="file" multiple>
 </div>
+
 
 <script>
     $(function () {

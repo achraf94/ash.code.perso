@@ -44,11 +44,29 @@ $reponse = $bdd->query('select * from users');
         </select>
 </div>
 </div>
+<button id="fina">
+Finance Team
+</button>
+<button id="mybu">
+test
+</button>
+<div id="resu"></div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="assets/node_modules/chosen-js/chosen.jquery.js"></script>
 <script src="assets/JS/listbox.js"></script>
 <script>
 $(function(){
     $(".chosen").chosen({width: "300px"});
+    $("#mybu").click(function(){
+      var tab = getValueOfMulti($("#Users"));
+      console.log(tab)
+    });
+    function getValueOfMulti(select) {
+    var tab = [];
+    select.each(function() {
+      tab.push($(this).val());
+    });
+    return tab;
+  }
 });
 </script>

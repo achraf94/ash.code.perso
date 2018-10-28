@@ -1,0 +1,139 @@
+body{
+    font-family: 'Crimson Text', serif;
+    margin:0;
+
+    color:#6a6f8c;
+    background: url("img_snuipp.png") repeat-x ;
+    background-size: cover;
+    font:600  'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+
+
+#ib{
+    text-align: center;
+    color: black;
+}
+
+.login-wrap{
+    width:90%;
+    margin:auto;
+    max-width:525px;
+
+    position:relative;
+
+}
+
+.login-html{
+    width:100%;
+
+    position: inherit;
+    padding:10px 30px 50px 70px;
+    background:rgba(1,57,101,.8);    border-radius: 80px;
+    
+}
+.login-html .sign-in-htm,
+.styleText{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+
+
+
+.login-form .group{
+    margin-bottom:15px;
+}
+.label2{
+    color:white;
+    font-weight: bold;  font-size:12px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+    width:100%;
+    color:#fff;
+
+}
+.login-form .group .input,
+.login-form .group .button{
+    border:none;
+    padding:15px 20px;
+    border-radius:25px;
+    background:rgba(255,255,255,.1);
+}
+
+.login-form .group .label{
+    color:white;
+    font-weight: bold;
+    font-size:12px;
+}
+.login-form .group .button{
+    background:#1161ee;
+    cursor: pointer;
+}
+.login-form .group .button:hover{
+    opacity: 0.8;
+}
+
+
+
+
+.hr{
+    height:2px;
+    margin:50px 0 50px 0;
+    background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+    text-align:center;
+}
+
+
+.text-style1{
+    color: gainsboro;
+    font-size: medium;
+    margin-left: 41px;
+    margin-top: 30px;
+    height: 40px;
+    font-family: 'Crimson Text', serif;
+}
+
+#presentation-image{
+    text-align: center;
+}
+
+nav{
+    background-image: url("../img/twiter.png");
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+@media screen and (max-width: 1280px)
+{
+    max-width:525px;
+    max-height:550px;
+    
+    
+}
+
+@media all and (max-width: 1024px)
+{
+    .login-wrap{
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    .body{
+        width: auto;
+    }
+}
+@media all and (max-width: 1024px)
+{
+    .login-html{
+        width: auto;
+        height: auto;
+    }
+}

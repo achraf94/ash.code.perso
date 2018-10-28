@@ -13,6 +13,11 @@ Class Users extends CI_Model {
         return $query->result();
     }
 
+    public function clearKey() {
+        $sql = "delete from keydown ";
+        $this->db->query($sql);
+    }
+
     public function get_info_user($id = "") {
         $sql = "SELECT * FROM `users` where User_ID = $id";
         $query = $this->db->query($sql);

@@ -31,7 +31,7 @@
 <input type="hidden" value="<?php echo $moi; ?>" id="connecter">
 
 <div style="padding-right: 10%; padding-top: 10px;position: absolute;">
-    <a  href="http://localhost:8080/ash.code.perso/codeigniter_m/index.php/c_raid/destroy/"class="btn btn-block btn-danger btn-cancel">Decconecter</a>
+    <a  href="http://localhost:8081/ash.code.perso/codeigniter_m/index.php/c_raid/destroy/"class="btn btn-block btn-danger btn-cancel">Decconecter</a>
 </div>
 <div style="padding-left: 90%; padding-top: 10px;">
 

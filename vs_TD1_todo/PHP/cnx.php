@@ -34,4 +34,68 @@ function getUsers($bdd){
     }
     return $Users;
 }
+function getFeatures($bdd){
+    $reponse = $bdd->query('select * from component');
+    $array = array();
+    while($row = $reponse->fetch()){
+    $array[$row["Features_ID"]] =$row["Name_f"] ;
+    }
+    return $array;
+}
+function getApplication($bdd){
+    $reponse = $bdd->query('select * from application');
+    $array = array();
+    while($row = $reponse->fetch()){
+    $array[$row["Apps_ID"]] =$row["Name_a"] ;
+    }
+    return $array;
+}
+function Json_Users($bdd){
+    $users = getUsers($bdd);
+    $rows = array();
+    foreach($users as $key => $value){
+        $eil=array();
+        $eil["DisplayText"]=$value;
+        $eil["Value"]=$key;
+        $rows[]=$eil;
+    }
+    $jTableResult = array();
+    $jTableResult['Result'] = "OK";
+    $jTableResult['action'] = "users";
+    $rows[]=$eil;
+    $jTableResult['Options'] = $rows;
+return  json_encode($jTableResult);
+}
+function Json_Features($bdd){
+    $features = getFeatures($bdd);
+    $rows = array();
+    foreach($features as $key => $value){
+        $eil=array();
+        $eil["DisplayText"]=$value;
+        $eil["Value"]=$key;
+        $rows[]=$eil;
+    }
+    $jTableResult = array();
+    $jTableResult['Result'] = "OK";
+    $jTableResult['action'] = "features";
+    $rows[]=$eil;
+    $jTableResult['Options'] = $rows;
+return  json_encode($jTableResult);
+}
+function Json_Application($bdd){
+    $appli = getApplication($bdd);
+    $rows = array();
+    foreach($appli as $key => $value){
+        $eil=array();
+        $eil["DisplayText"]=$value;
+        $eil["Value"]=$key;
+        $rows[]=$eil;
+    }
+    $jTableResult = array();
+    $jTableResult['Result'] = "OK";
+    $jTableResult['action'] = "applicationjson";
+    $rows[]=$eil;
+    $jTableResult['Options'] = $rows;
+return  json_encode($jTableResult);
+}
 ?>

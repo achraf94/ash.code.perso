@@ -1,0 +1,17 @@
+delimiter //
+CREATE  TRIGGER `delete_record_version` before delete ON `component` FOR EACH ROW 
+BEGIN
+	delete from suivi_versionning where Component_ID = old.Component_ID;
+END //
+delimiter ;
+
+delimiter //
+CREATE  TRIGGER `add_record_version` AFTER INSERT ON `component` FOR EACH ROW BEGIN
+  DECLARE version_count INT;
+  SET version_count = ( select count(*) from suivi_versionning where  Component_ID = new.Component_ID) ;
+  IF (version_count = 0) THEN
+    INSERT into suivi_versionning(Component_ID,Name, Owner,model,comments,date_create) 
+	 VALUES (new.Component_ID, new.Name, new.Owner,new.model,new.comments,new.date_create);
+  END IF;
+END //
+delimiter ;

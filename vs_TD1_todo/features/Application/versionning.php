@@ -19,7 +19,7 @@
     width:20px;
     height:20px;
 }
-.jtable-data-row {
+.jtable-data-row , .jtable-column-header-container{
     font-size:0.8em;
     text-align:center;
 }

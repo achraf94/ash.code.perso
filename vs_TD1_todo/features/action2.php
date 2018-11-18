@@ -102,10 +102,10 @@ if($table=="component"){
 		print json_encode($jTableResult);
         break;
         case "update" :
-        $date  = $_POST["Date_create"];
+
         $result = "UPDATE  suivi_versionning set Component_ID ='" . $_POST["Component_ID"] . "',Name ='" . $_POST["Name"] . "'
         Owner ='" . $_POST["Owner"] . "',model ='" . $_POST["model"] . "',comments ='" . $_POST["comments"] . "',date_create = NOW()
-        where Apps_ID =  ".$_POST["Apps_ID"];
+        where version_ID =  ".$_POST["version_ID"];
         $bdd->exec($result);
         $jTableResult = array();
         $jTableResult['Result'] = "OK";

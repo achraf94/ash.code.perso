@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="../node_modules/materialize-css/dist/css/materialize.css">
+<style>
+.containe{
+    top:10px;
+    left:50px;
+    right: 50px;
+    width: 30%;
+}
+</style>
+<div class="row containe">
+    <h4>
+            How many hours do you do these activities 
+    </h4>
+  
+          <div class="row">
+
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="work" type="number" class="validate">
+                        <label for="work">work</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="input-field col s12">
+                            <input id="Eat" type="number" class="validate">
+                            <label for="Eat">Eat</label>
+                        </div>
+                    </div>
+                <div class="row">
+                            <div class="input-field col s12">
+                                <input id="Commute" type="number" class="validate">
+                                <label for="Commute">Commute</label>
+                            </div>
+                </div>
+                <div class="row">
+                        <div class="input-field col s12">
+                            <input id="Watch" type="number" class="validate">
+                            <label for="Watch">Watch TV</label>
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="input-field col s12">
+                        <input id="Sleep" type="number" class="validate">
+                        <label for="Sleep">Sleep</label>
+                    </div>
+        </div>
+    
+        <div class="row">
+                <div class="input-field col s12 center">
+             
+                <button class="btn btn-success" id="send" type="button"> Send</button>
+                </div>
+    </div>
+          </div>
+       
+      </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+      <script src="../node_modules/materialize-css/dist/js/materialize.js"></script>
+      <script>
+      $(function(){
+          $("#send").click(function(){
+            var work = $("#work").val();
+            var Eat = $("#Eat").val();
+            var Commute = $("#Commute").val();
+            var Watch = $("#Watch").val();
+            var Sleep = $("#Sleep").val();
+            $.post("getdata.php",{  work:work, Eat :Eat, Commute :Commute, Watch:Watch, Sleep:Sleep});
+
+          });
+
+      });
+      </script>

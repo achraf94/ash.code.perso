@@ -1,0 +1,26 @@
+#boxMsg{
+
+    max-height: 300px;
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 15px);
+    z-index: 10;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    flex-direction: column;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+
+.user1{
+    font-size: 1.3em;
+    color:red;
+}
+.user2{
+    font-size: 1.3em;
+    color:royalblue;
+}

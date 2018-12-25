@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Super Chat temps réel !</title>
+    <link
+      rel="stylesheet"
+      href="http://localhost:8081/ash.code.perso/socket/node_modules/materialize-css/dist/css/materialize.css"/>
+    <link
+      rel="stylesheet"
+      href="http://localhost:8081/ash.code.perso/socket/tchat/msg.css"/>
+      <style>
+      .badge{
+          background-color: black;
+          color: white;
+          font-weight: bold;
+      }
+      </style>
+  </head>
+
+  <body>
+
+   <section class="avenue-messenger">
+
+            <div class="chat">
+                <div class="chat-title">
+                    <h1></h1>
+                    <h2 class="rej"></h2>
+                    <figure class="avatar">
+                        <img src="data:image/png;base64,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" /></figure>
+                </div>
+                <div class="messages">
+                    <div class="messages-content"></div>
+                </div>
+                <div class="message-box">
+                    <form action="/" method="post" id="formulaire_chat">
+                        <textarea type="text" class="message-input" placeholder="Type message..." id="message" autofocus></textarea>
+                        <button type="button" class="message-submit" id="envoi_message">Send</button>
+                  </form>
+                </div>
+            </div>
+    </section>
+
+
+
+
+   
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://localhost:8081/ash.code.perso/socket/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Connexion à socket.io
+      var socket = io.connect("http://localhost:1376");
+
+      // On demande le pseudo, on l'envoie au serveur et on l'affiche dans le titre
+      var pseudoo = prompt("Quel est votre pseudo ?");
+      socket.emit("nouveau_client", pseudoo);
+      document.title = pseudoo + " - " + document.title;
+
+      // Quand on reçoit un message, on l'insère dans la page
+      socket.on("message", function(data) {
+        insereMessage(data.pseudo, data.message,"pasmoi");
+      });
+
+      // Quand un nouveau client se connecte, on affiche l'information
+      socket.on("nouveau_client", function(pseudo) {
+        $(".rej").prepend(
+          "<p><em>" + pseudo + " a rejoint le Chat !</em></p>"
+        );
+      });
+
+
+      $('.message-submit').click(function() {
+        var message = $("#message").val();
+        socket.emit("message", message);
+        $("#message").val("").focus();
+        insereMessage(pseudoo, message,"moi");
+});
+
+      // Ajoute un message dans la page
+      function insereMessage(pseudo, message,who) {
+        var msg="";
+          if(who ==="moi"){
+              var msg = '<div class="message message-personal">'+message+' </div>';
+          }else{
+            var msg = '<div class="message new">'+message+' </div>';
+          }
+        $(".messages-content").prepend(
+            msg
+        );
+      }
+    </script>
+  </body>
+</html>

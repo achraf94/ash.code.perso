@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Socket.io</title>
+        <link rel="stylesheet" href="http://localhost:8081/ash.code.perso/socket/node_modules/materialize-css/dist/css/materialize.css">
+        <style>
+        .row{
+            width: 50%;
+            padding-left: 120px;
+        }
+        </style>
+    </head>
+ 
+    <body>
+
+        <div class="row center">
+                <div class="col s12">
+                        <div class="row">
+                                <div class="input-field col s12">
+                                  <label for="email">Pseudo</label> <input id="pseudo" type="email" class="validate">
+                                </div>        
+                                <button id="sub"class="btn waves-effect waves-light" type="submit" name="action">connect</button>
+                        </div>
+                </div>
+              </div>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://localhost:8081/ash.code.perso/socket/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+            var socket = io.connect('http://localhost:8082');
+            //recevoir message emis par le serveur
+            socket.on('message', function(message) {
+                console.log('Le serveur a un message pour vous : ' + message);
+                  });
+                  
+            $("#sub").click(function(){
+                var pseudo = $("#pseudo").val();
+                socket.emit('petit_nouveau', pseudo);
+                socket.emit('message', "wsh");
+            });
+        </script>
+    </body>
+</html>

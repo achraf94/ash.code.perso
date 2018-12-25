@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(162, 155, 254,0.2);
+}
+.brand-logo{
+    font-family: 'ZCOOL XiaoWei', serif;
+
+}
+.leftpadding{
+    margin-left: 4px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+.container{
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+#blasadialCarousel > p{
+    text-align: left;
+}
+h5{
+    text-align: left;color:rgba(99, 110, 114,1.0);
+}
+.carousel-caption{
+    color: rgba(45, 52, 54,0.5);z-index: 99;
+}
+
+.albery-container{
+margin-left: 40%;
+}
